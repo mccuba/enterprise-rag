@@ -1,0 +1,90 @@
+{
+  "description": "Conjunto mínimo de evaluación (≥10 preguntas). Ajustar expected_answer/source tras cargar los PDFs elegidos.",
+  "documents_note": "Usar PDFs públicos ≥10 páginas. Ejemplo: 'Attention Is All You Need' (arXiv:1706.03762).",
+  "questions": [
+    {
+      "id": "q01",
+      "type": "in_document",
+      "question": "¿Cuál es la idea principal del mecanismo de atención (attention)?",
+      "expected_answer_hint": "Ponderar relevancia entre tokens sin recurrencia.",
+      "expected_source_hint": "sección Attention / Scaled Dot-Product"
+    },
+    {
+      "id": "q02",
+      "type": "in_document",
+      "question": "¿Qué significa 'multi-head attention'?",
+      "expected_answer_hint": "Varias cabezas de atención en paralelo.",
+      "expected_source_hint": "sección Multi-Head Attention"
+    },
+    {
+      "id": "q03",
+      "type": "in_document",
+      "question": "¿Por qué se usa scaled dot-product attention (el factor de escala)?",
+      "expected_answer_hint": "Evitar valores grandes en softmax cuando d_k crece.",
+      "expected_source_hint": "Scaled Dot-Product Attention"
+    },
+    {
+      "id": "q04",
+      "type": "multi_chunk",
+      "question": "Compara encoder y decoder del Transformer: roles y diferencias clave.",
+      "expected_answer_hint": "Encoder contextualiza; decoder genera con máscara causal + cross-attention.",
+      "expected_source_hint": "Model Architecture + Encoder/Decoder stacks"
+    },
+    {
+      "id": "q05",
+      "type": "multi_chunk",
+      "question": "¿Cómo se combinan embeddings de posición con embeddings de tokens?",
+      "expected_answer_hint": "Se suman positional encodings a los embeddings de entrada.",
+      "expected_source_hint": "Positional Encoding + Embeddings"
+    },
+    {
+      "id": "q06",
+      "type": "in_document",
+      "question": "¿Qué función de activación usan las capas feed-forward del paper?",
+      "expected_answer_hint": "ReLU (en el paper original).",
+      "expected_source_hint": "Position-wise Feed-Forward Networks"
+    },
+    {
+      "id": "q07",
+      "type": "in_document",
+      "question": "Menciona al menos un dataset o tarea de evaluación usada en el paper.",
+      "expected_answer_hint": "WMT 2014 EN-DE / EN-FR u otras tareas de traducción.",
+      "expected_source_hint": "Results / Training"
+    },
+    {
+      "id": "q08",
+      "type": "out_of_document",
+      "question": "¿Cuál es el precio actual de la acción de NVIDIA?",
+      "expected_answer_hint": "El asistente debe indicar información insuficiente / no está en el documento.",
+      "expected_source_hint": null
+    },
+    {
+      "id": "q09",
+      "type": "out_of_document",
+      "question": "¿Quién ganó el Mundial de fútbol 2022?",
+      "expected_answer_hint": "insufficient_context = true",
+      "expected_source_hint": null
+    },
+    {
+      "id": "q10",
+      "type": "out_of_document",
+      "question": "Resume la política de vacaciones de la Universidad Continental.",
+      "expected_answer_hint": "No está en los PDFs cargados → no inventar.",
+      "expected_source_hint": null
+    },
+    {
+      "id": "q11",
+      "type": "multi_chunk",
+      "question": "¿Qué ventajas reclama el Transformer frente a RNN/CNN en traducción?",
+      "expected_answer_hint": "Paralelización, caminos más cortos, mejor o igual calidad.",
+      "expected_source_hint": "Introduction + Why Self-Attention + Results"
+    },
+    {
+      "id": "q12",
+      "type": "in_document",
+      "question": "¿Qué es residual connection en la arquitectura descrita?",
+      "expected_answer_hint": "Skip connections + layer norm alrededor de sub-capas.",
+      "expected_source_hint": "Encoder and Decoder Stacks"
+    }
+  ]
+}
