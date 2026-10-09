@@ -26,11 +26,22 @@ Ver decisiones detalladas en [`DECISION_LOG.md`](./DECISION_LOG.md).
 
 ## Documentos de conocimiento
 
-Usa PDFs **públicos** (≥10 páginas). Ejemplo recomendado:
+Corpus de papers públicos de ML/física generativa (todos ≥10 páginas), usados para demostrar
+ingesta, retrieval, grounding y trazabilidad. Archivos locales de referencia en
+`PostDoct/PAPERS/`; fuentes públicas (arXiv) abajo.
 
-- Vaswani et al., *Attention Is All You Need* — https://arxiv.org/pdf/1706.03762
+| Título | Autores (resumen) | Fuente pública | Págs. | Descripción breve |
+|--------|-------------------|----------------|-------|-------------------|
+| Active Flow Expansion for Out-of-Distribution Discovery: from Theory to Molecules | De Santi et al. | [arXiv:2606.08802](https://arxiv.org/pdf/2606.08802) | 43 | Expansión activa de flujos para descubrimiento OOD; de teoría a moléculas. |
+| Carré du champ flow matching: better quality-generalisation tradeoff in generative models | Bamberger et al. | [arXiv:2510.05930](https://arxiv.org/pdf/2510.05930) | 24 | Flow matching con *carré du champ*; trade-off calidad vs generalización. |
+| Conservation Laws for Diffusion Models | Aharoni & Pfister | [arXiv:2607.10067](https://arxiv.org/pdf/2607.10067) | 23 | Leyes de conservación aplicadas al análisis de modelos de difusión. |
+| DiffTaichi: Differentiable Programming for Physical Simulation | Hu et al. (ICLR 2020) | [arXiv:1910.00935](https://arxiv.org/pdf/1910.00935) | 20 | Programación diferenciable para simulación física (DiffTaichi). |
+| Flow Matching Meets PDEs: A Unified Framework for Physics-Constrained Generation | Baldan, Liu, Guardone, Thuerey | Preprint (archivo `FLOW MATCHING MEETS PDES.pdf`) | 24 | Marco unificado que combina flow matching con restricciones de EDPs. |
+| Flow Matching for Generative Modeling | Lipman et al. (FAIR / Weizmann) | [arXiv:2210.02747](https://arxiv.org/pdf/2210.02747) | 28 | Paper fundacional de *flow matching* para modelado generativo. |
+| Physics-Informed Diffusion Models | Bastek, Sun, Kochmann (ICLR 2025) | [arXiv:2403.14404](https://arxiv.org/pdf/2403.14404) | 26 | Difusión informada por física (PINNs + diffusion). |
 
-Indica en este README título, fuente y breve descripción de los PDFs que entregues.
+Dominio elegido: **IA generativa / flow matching / física-ML**, con suficiente extensión para
+consultas in-document, multi-chunk y out-of-document.
 
 ## Requisitos
 
